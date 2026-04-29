@@ -25,7 +25,7 @@ var contacts = [
     }
 ];
 function lookupProfile(name, prop){
-    for(var i = 0 ; i < contacts.length; i++){
+    for(var i = 0 ; i ){
         if(contacts[i].firstname === name){
           return contacts[i][prop] || "no such property";
         }
