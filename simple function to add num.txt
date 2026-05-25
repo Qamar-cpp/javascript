@@ -1,0 +1,17 @@
+-- Ek simple function jo do numbers ko jama (add) karta hai
+addNumbers :: Int -> Int -> Int
+addNumbers x y = x + y
+
+-- Ek function jo list mein se sirf even (juft) numbers nikalta hai
+getEvenNumbers :: [Int] -> [Int]
+getEvenNumbers list = filter even list
+
+main :: IO ()
+main = do
+    -- Function call aur result print karna
+    let sum = addNumbers 10 20
+    putStrLn ("10 aur 20 ka sum hai: " ++ show sum)
+    
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let evens = getEvenNumbers numbers
+    putStrLn ("Even numbers ki list: " ++ show evens)

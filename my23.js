@@ -1,4 +1,4 @@
-var tempOfTomorrow = {
+const tempOfTomorrow = {
     tomorrow : 33,
     otherdays : 44
 }
